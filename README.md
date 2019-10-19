@@ -1,6 +1,6 @@
 # AWS-SecurityAudit
 
-run install.sh\
+run install.sh
 
 creates user SecConsultant\
 creates group SecurityAudit
