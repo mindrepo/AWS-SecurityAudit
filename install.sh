@@ -6,6 +6,7 @@ aws iam create-policy --policy-name Prowler-SecAuditPolicy --policy-document fil
 aws iam attach-group-policy --group-name SecurityAudit --policy-arn arn:aws:iam::${ACCOUNT_ID}:policy/MFA-CLI-SecAuditPolicy
 aws iam attach-group-policy --group-name SecurityAudit --policy-arn arn:aws:iam::${ACCOUNT_ID}:policy/Prowler-SecAuditPolicy
 aws iam attach-group-policy --group-name SecurityAudit --policy-arn arn:aws:iam::aws:policy/SecurityAudit
+aws iam attach-group-policy --group-name SecurityAudit --policy-arn arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
 aws iam create-user --user-name SecConsultant
 aws iam add-user-to-group --user-name SecConsultant --group-name SecurityAudit
 aws iam create-access-key --user-name SecConsultant
